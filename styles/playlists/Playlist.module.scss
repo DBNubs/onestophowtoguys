@@ -1,0 +1,35 @@
+.playlist {
+  display: flex;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+  img {
+    width: 50%;
+  }
+
+  .details {
+    width: 75%;
+    margin-left: 25px;
+
+    h2 {
+      color: #0887AF;
+    }
+
+    p {
+      color: #000;
+    }
+
+    a {
+      background: #0887AF;
+      color: #fff;
+      padding: 15px 25px;
+      display: inline-block;
+      margin-top: 25px;
+
+      &:hover {
+        background: #333;
+      }
+    }
+  }
+}
