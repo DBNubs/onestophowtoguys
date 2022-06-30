@@ -9,7 +9,7 @@ const myLoader = ({ src, width, quality }) => {
 const VideoLinkItem = ({playListSnippet, playlistTitle, id}) => {
   let parsedTitleForLink = playListSnippet.title.replace(/ /g, '-').toLowerCase();
   let parsedPlaylistTitleForLink = playlistTitle.replace(/ /g, '-').toLowerCase();
-  let link = `/tutorials/${parsedPlaylistTitleForLink}/${parsedTitleForLink}`
+  let link = `/tutorials/${parsedPlaylistTitleForLink}/${parsedTitleForLink}?videoId=${id}`
 
   return (
     <div>

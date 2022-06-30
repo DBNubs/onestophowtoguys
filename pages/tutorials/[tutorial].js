@@ -24,7 +24,6 @@ export async function getServerSideProps(context) {
 }
 
 const Tutorial = ({videos, title}) => {
-  console.log(videos)
   return (
     <>
       <Head>
@@ -36,7 +35,7 @@ const Tutorial = ({videos, title}) => {
           {videos.items.map((item) => {
             const { id } = item;
             return (
-              <VideoLinkItem key={id} playListSnippet={item.snippet} id={id} playlistTitle={title}></VideoLinkItem>
+              <VideoLinkItem key={id} playListSnippet={item.snippet} id={item.snippet.resourceId.videoId} playlistTitle={title}></VideoLinkItem>
             )
           })}
         </div>
